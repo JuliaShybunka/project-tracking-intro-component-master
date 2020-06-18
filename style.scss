@@ -5,6 +5,7 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .attribution a {
@@ -39,7 +40,7 @@ body {
     overflow: hidden;
     &-bg {
         text-align: right;
-        margin-top: -33%;
+        margin-top: -29%;
         margin-right: -18.5%;
     }
 }
@@ -59,6 +60,9 @@ body {
         font-size: 0.91rem;
         letter-spacing: 1.1px;
         padding: 8px 20px;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__logo {
         display: block;
@@ -127,6 +131,11 @@ body {
         width: 185px;
         background-color: #ff5d5e;
         margin-right: 23px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ff8584;
+            border-color: #ff8584;
+        }
     }
     &__text {
         display: inline-block;

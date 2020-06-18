@@ -5,6 +5,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .attribution a {
@@ -38,7 +39,7 @@ body::before {
 }
 .header-bg {
   text-align: right;
-  margin-top: -33%;
+  margin-top: -29%;
   margin-right: -18.5%;
 }
 
@@ -58,6 +59,9 @@ body::before {
   font-size: 0.91rem;
   letter-spacing: 1.1px;
   padding: 8px 20px;
+}
+.header-nav .nav-link:hover {
+  text-decoration: underline;
 }
 .header-nav__logo {
   display: block;
@@ -126,6 +130,11 @@ body::before {
   width: 185px;
   background-color: #ff5d5e;
   margin-right: 23px;
+  cursor: pointer;
+}
+.content-info__button:hover {
+  background-color: #ff8584;
+  border-color: #ff8584;
 }
 .content-info__text {
   display: inline-block;
