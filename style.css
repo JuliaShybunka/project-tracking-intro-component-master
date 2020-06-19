@@ -140,3 +140,31 @@ body::before {
   display: inline-block;
   letter-spacing: 5.8px;
 }
+
+@media (max-width: 1250px) {
+  .header-bg {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header-bg img {
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .header-nav__logo img {
+    width: 23px;
+  }
+
+  body::before {
+    width: 55%;
+    height: 30%;
+  }
+}
