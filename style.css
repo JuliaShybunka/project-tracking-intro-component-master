@@ -2,19 +2,6 @@
   box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
-/* font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Barlow', sans-serif;
-*/
 body {
   font-weight: 400;
   font-family: "Barlow Condensed", sans-serif;
@@ -35,6 +22,7 @@ body::before {
 }
 
 .header {
+  height: 100%;
   overflow: hidden;
 }
 .header-bg {
@@ -47,6 +35,19 @@ body::before {
   max-width: 1140px;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Barlow', sans-serif;
+*/
 .header-nav {
   padding-top: 5%;
   align-items: center;
