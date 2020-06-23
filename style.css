@@ -142,6 +142,22 @@ font-family: 'Barlow', sans-serif;
   letter-spacing: 5.8px;
 }
 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:active {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background: no-repeat center center url(images/icon-hamburger.svg);
+}
+
+button[aria-expanded=true] .navbar-toggler-icon {
+  background: no-repeat center center url(images/icon-close.svg);
+}
+
 @media (max-width: 1250px) {
   .header-bg {
     margin: 0 auto;
@@ -153,11 +169,13 @@ font-family: 'Barlow', sans-serif;
 }
 @media (max-width: 375px) {
   .container {
-    max-width: 375px;
+    max-width: 356px;
   }
 
   .content-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    padding: 4% 0 4%;
   }
 
   .header-nav__logo img {
@@ -167,5 +185,68 @@ font-family: 'Barlow', sans-serif;
   body::before {
     width: 55%;
     height: 30%;
+  }
+
+  .navbar {
+    position: relative;
+    text-align: center;
+    top: 2px;
+    left: 16px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100px;
+    width: 312px;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+  }
+
+  .nav-link.header-nav__login::before {
+    width: 264px;
+    border-radius: 0;
+    height: 1px;
+    top: 0;
+    background-color: #e0e0e0;
+  }
+
+  .nav-link.header-nav__login {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-bg img {
+    width: 496px;
+    margin-top: 50px;
+    margin-left: -19px;
+  }
+
+  .content-suptitle {
+    margin-top: 86px;
+    font-size: 1rem;
+    letter-spacing: 4.6px;
+  }
+
+  .content-info {
+    margin-top: 8.5%;
+  }
+
+  .content-info__button {
+    width: 153px;
+    font-size: 1rem;
+  }
+
+  .content-info__text {
+    letter-spacing: 3.5px;
+    font-size: 0.7rem;
+  }
+
+  .header-nav .nav-link {
+    padding: 20px 20px;
+  }
+
+  .content-suptitle span {
+    margin-right: 10px;
   }
 }

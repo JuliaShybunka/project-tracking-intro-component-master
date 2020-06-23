@@ -5,5 +5,6 @@ $(document).ready(function() {
 
     if (window.matchMedia('(max-width: 1250px)').matches) {
         $('.header-bg').insertBefore('.content');
-    }
+    };
+
 });
