@@ -22,13 +22,17 @@ body::before {
 }
 
 .header {
-  height: 100%;
+  min-height: 800px;
   overflow: hidden;
+  position: relative;
 }
 .header-bg {
-  text-align: right;
-  margin-top: -29%;
-  margin-right: -18.5%;
+  position: absolute;
+  top: 219px;
+  right: -300px;
+}
+.header-bg img {
+  width: 950px;
 }
 
 .container {
@@ -38,7 +42,6 @@ body::before {
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 50px;
 }
 
 .attribution a {
@@ -160,16 +163,25 @@ button[aria-expanded=true] .navbar-toggler-icon {
 
 @media (max-width: 1250px) {
   .header-bg {
-    margin: 0 auto;
-    text-align: center;
+    margin-top: 20px;
   }
   .header-bg img {
-    width: 350px;
+    width: 700px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 876px) {
+  .header-bg {
+    position: static;
+    width: 500px;
+    margin: 20px auto;
+  }
+  .header-bg img {
+    width: 500px;
+  }
+}
+@media (max-width: 767px) {
   .container {
-    max-width: 356px;
+    max-width: 600px;
   }
 
   .content-title {
@@ -201,6 +213,7 @@ button[aria-expanded=true] .navbar-toggler-icon {
     margin: auto;
     display: block;
     background-color: #fff;
+    box-shadow: -11px 10px 17px 0px rgba(201, 200, 205, 0.66);
   }
 
   .nav-link.header-nav__login::before {
@@ -248,5 +261,10 @@ button[aria-expanded=true] .navbar-toggler-icon {
 
   .content-suptitle span {
     margin-right: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 356px;
   }
 }
